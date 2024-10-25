@@ -31,7 +31,8 @@ def main(output: StringIO) -> str:
                 pyScript.output = CObj(Py.Import("io")).StringIO()
                 Dim pyArgList As New PyList, pyOutput As PyObject
                 If chkWithArguments.Checked Then
-                    Dim argsInput = InputBox("Enter arguments for the main function:")
+                    Dim argsInput = InputBox("Enter the argument(s) for the main function, 
+using a comma to separate each one:")
                     For Each pyArg In argsInput.Split(","c).Select(Function(x) x.Trim())
                         Dim pyInt As New Long, pyFloat As New Double
                         If Long.TryParse(pyArg, pyInt) Then
