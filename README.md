@@ -1,7 +1,10 @@
 # Running Python Scripts in WinForms Application
 
-This VB.NET project enables the execution of Python scripts within a Windows Forms application. It's designed to
-harness the flexibility and power of Python in conjunction with the user interface capabilities of WinForms.
+This VB.NET project enables the execution of Python scripts within a Windows Forms application, which is designed to
+harness the flexibility and power of Python in conjunction with the user interface capabilities of WinForms. This 
+project is a result of my ongoing practice and development efforts, and currently supports only the standard libraries 
+of Python. Therefore, there is significant potential for expansion and enhancement - I plan to add more functionality 
+as time and opportunities arise.
 
 ## Project Overview
 
