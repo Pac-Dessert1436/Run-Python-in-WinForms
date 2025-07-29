@@ -64,7 +64,7 @@ using a comma to separate each one:")
             lblExampleUsage.Text = "from io import StringIO
 
 # Arguments in the main function are passed internally.
-def main(output: StringIO, args: list = []) -> str:
+def main(output: StringIO, args: list) -> str:
     print(str().join(args), file=output)
     return output.getvalue()"
         Else

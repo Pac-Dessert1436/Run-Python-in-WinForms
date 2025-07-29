@@ -28,6 +28,9 @@
     <Compile Update="Program.vb">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>
+    <None Update="PyScripts/*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

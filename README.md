@@ -1,11 +1,7 @@
 # Running Python Scripts in WinForms Application
 
-This VB.NET project enables the execution of Python scripts within a Windows Forms application, which is designed to
+This VB.NET project enables the execution of Python scripts within a Windows Forms application. It's designed to
 harness the flexibility and power of Python in conjunction with the user interface capabilities of WinForms.
-
-The project is a result of my ongoing practice and development efforts, and currently supports _only the standard libraries 
-of Python_. For this reason, there is significant potential for expansion and enhancement - I plan to add more functionality 
-as time and opportunities arise.
 
 ## Project Overview
 
@@ -20,13 +16,13 @@ the main function in your Python scripts must be defined according to the follow
 ### With Arguments
 
 If your script is designed to accept arguments, the main function should take a `StringIO` object for output and
-an optional list of arguments. The function should print to the `StringIO` object and return its contents.
+a list of arguments of any type. The function should print to the `StringIO` object and return its contents.
 
 ```python
 from io import StringIO
 
 
-def main(output: StringIO, args: list = []) -> str:
+def main(output: StringIO, args: list) -> str:
     # Join arguments and print to output
     print(str().join(args), file=output)
     # Return the contents of the output buffer
